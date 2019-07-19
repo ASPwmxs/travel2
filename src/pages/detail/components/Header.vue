@@ -39,6 +39,10 @@ export default {
   },
   activated () {
     window.addEventListener('scroll', this.handleScroll)
+  },
+  deactivated () {
+    window.removeEventListenner('scroll', this.handleScroll)
+    //页面隐藏后对全局事件进行解绑
   }
 }
 </script>
