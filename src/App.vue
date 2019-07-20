@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <keep-alive>
+   <keep-alive exclude="Detail"><!-- detail组件不被缓存1 mounted -->
       <router-view/>
     </keep-alive>
   </div>
